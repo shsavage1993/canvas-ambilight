@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="video-player" class="player">
+        <!-- <iframe
+          src="https://player.vimeo.com/video/571716763?h=d278c4dc5b&autoplay=1&autopause=0&fullscreen=0&loop=0&muted=0&background=0"
+          width="100%"
+          height="100%"
+          allow="autoplay; fullscreen"
+        /> -->
+        <video
+          id="video"
+          controls
+          src="https://cdn.jwplayer.com/videos/phPbvqkT-NXXsvM7w.mp4"
+          poster="https://cdn.jwplayer.com/v2/media/phPbvqkT/poster.jpg?width=720"
+        ></video>
+        <canvas id="canvas-ambilight"></canvas>
+        <!-- The video poster is also included as a hidden `<img>`, so we can have an "ambilight" bg on pageload already. -->
+        <img
+          id="video-poster"
+          class="poster"
+          src="https://cdn.jwplayer.com/v2/media/phPbvqkT/poster.jpg?width=720"
+        />
+      </div>
+    </div>
+    <script src="canvas.js"></script>
+  </body>
+</html>
